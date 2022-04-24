@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:zahran_phone/constants/my_colors.dart';
 
+import 'home/home_screen.dart';
 import 'log_in/log_in_screen.dart';
 
 void main() {
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FlutterStatusbarcolor.setStatusBarColor(MyColors.myDark);
+    FlutterStatusbarcolor.setStatusBarColor(MyColors.myDarkGreen);
     return const MaterialApp(
-      home: LogInScreen(),
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
