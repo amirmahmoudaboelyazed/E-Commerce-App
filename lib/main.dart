@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:zahran_phone/constants/my_colors.dart';
-
-import 'home/home_screen.dart';
-import 'log_in/log_in_screen.dart';
+import 'app_route.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp(
+    appRouters: AppRouters(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final AppRouters appRouters;
+  const MyApp({Key? key, required this.appRouters}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     FlutterStatusbarcolor.setStatusBarColor(MyColors.myDarkGreen);
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      onGenerateRoute: appRouters.generateRouter,
     );
   }
 }
