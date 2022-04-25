@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:zahran_phone/ui/layout_home/modules/programs/programs.dart';
 import 'package:zahran_phone/ui/layout_home/modules/services/services.dart';
 import 'package:zahran_phone/ui/layout_home/modules/settings/settings.dart';
-import 'components/bottom_navy_bar_item.dart';
-import 'modules/home/home.dart';
+import '../components/bottom_navy_bar_item.dart';
+import '../modules/home/home.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

@@ -37,6 +37,9 @@ dependencies:
   flutter_statusbarcolor_ns: ^0.4.0
   bottom_navy_bar: ^6.0.0
   animated_text_kit: ^4.2.1
+  flutter_onboarding_screen: ^2.0.2
+  bloc: ^8.0.3
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
   flutter_test:
