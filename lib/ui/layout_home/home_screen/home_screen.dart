@@ -15,12 +15,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
-  List screens = [
-    const Home(),
-    const Programs(),
-    const Services(),
-    const Settings()
-  ];
+  List screens = [Home(), const Programs(), const Services(), const Settings()];
   int _currentIndex = 0;
   PageController? _pageController;
 
@@ -39,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           items: <BottomNavyBarItem>[
             bottomNavyBarItem('الرئيسة', Icons.home),
-            bottomNavyBarItem('برامجنا', Icons.apps),
+            bottomNavyBarItem('الطلبات', Icons.reorder_sharp),
             bottomNavyBarItem('خدمتنا', Icons.home_repair_service),
             bottomNavyBarItem('الاعدادات', Icons.settings),
           ],

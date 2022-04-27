@@ -11,7 +11,7 @@ class AppRouters {
   Route? generateRouter(RouteSettings settings) {
     switch (settings.name) {
       case MyStrings.splash:
-        return MaterialPageRoute(builder: (_) => const SplashScreen());
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       case MyStrings.homeScreen:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
       case MyStrings.onBoardingScreen:
